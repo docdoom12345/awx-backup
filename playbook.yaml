@@ -1,0 +1,8 @@
+- name: backup awx
+  hosts: localhost
+  roles: 
+    - backup
+  vars:
+    backup_pvc_namespace: awx
+    backup_pvc: pvc_backup
+    
